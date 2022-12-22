@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Movie from './Movie';
+import Movies from './Movies';
 import axios from 'axios';
 
 export default function Main() {
@@ -17,12 +17,6 @@ export default function Main() {
 
     return (
         movie ? (
-            <Movie
-                Poster_Link={movie[0].Poster_Link}
-                Series_Title={movie[0].Series_Title}
-                Overview={movie[0].Overview}
-                Genre={movie[0].Genre}
-                Runtime={movie[0].Runtime}
-            />) : (<div>Error</div>)
+            <Movies movies={movie} />) : (<div>Error</div>)
     );
 }   
