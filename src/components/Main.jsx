@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Movies from './Movies';
+import MovieList from './MovieList';
 import axios from 'axios';
 
 export default function Main() {
@@ -17,6 +17,6 @@ export default function Main() {
 
     return (
         movie ? (
-            <Movies movies={movie} />) : (<div>Error</div>)
+            <MovieList movies={movie} />) : (<div>Error</div>)
     );
 }   
