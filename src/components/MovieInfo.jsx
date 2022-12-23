@@ -37,7 +37,9 @@ export default function MovieItem() {
                     <h6 className="movie-info-votes">{movie.No_of_Votes}</h6>
                     <h6 className="movie-info-gross">{"$" + movie.Gross}</h6>
                 </div>
-                <button>Back</button>
+                <form action="http://localhost:3001/movies">
+                    <input type="submit" value="Back" />
+                </form>
             </>) : (<div>Loading...</div>)
     );
 }   
