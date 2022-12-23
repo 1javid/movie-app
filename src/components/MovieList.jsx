@@ -1,21 +1,22 @@
-import React from "react";
-// import { NavLink } from "react-router-dom";
-import "./MovieList.css"
+import React, { useEffect, useState } from 'react';
+import Movie from './Movie';
+import axios from 'axios';
 
-export default function Movie(props) {
+export default function Main() {
+
+    const [movie, setMovie] = useState(null);
+
+    useEffect(() => {
+        let url = `http://localhost:3000/movies`;
+        axios.get(url)
+            .then((response) => {
+                setMovie(response.data);
+                console.log(response.data);
+            })
+    }, []);
+
     return (
-        <>
-            {props.movies.map((movie) => (
-                <div className="movie-info">
-                    <img src={movie.Poster_Link} alt="movie_img" />
-                    {/* <NavLink className="product-item" to={"/movies/" + movie.id}> */}
-                    <h4 className="movie-info-title">{movie.Series_Title}</h4>
-                    {/* </NavLink> */}
-                    <p className="movie-info-overview">{movie.Overview}</p>
-                    <h6 className="movie-info-genre">{movie.Genre}</h6>
-                    <h6 className="movie-info-runtime">{movie.Runtime}</h6>
-                </div>
-            ))}
-        </>
+        movie ? (
+            <Movie movies={movie} />) : (<div>Error</div>)
     );
-}
+}   
