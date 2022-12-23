@@ -17,6 +17,6 @@ export default function Main() {
 
     return (
         movie ? (
-            <Movie movies={movie} />) : (<div>Error</div>)
+            <Movie movies={movie} />) : (<div>Loading...</div>)
     );
 }   
