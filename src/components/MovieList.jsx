@@ -4,19 +4,22 @@ import axios from 'axios';
 
 export default function Main() {
 
-    const [movie, setMovie] = useState(null);
+    const [movies, setMovies] = useState(null);
 
     useEffect(() => {
         let url = `http://localhost:3000/movies`;
         axios.get(url)
             .then((response) => {
-                setMovie(response.data);
+                setMovies(response.data);
                 console.log(response.data);
+            })
+            .catch((error) => {
+                console.log(error);
             })
     }, []);
 
     return (
-        movie ? (
-            <Movie movies={movie} />) : (<div>Loading...</div>)
+        movies ? (
+            <Movie movies={movies} />) : (<div>Loading...</div>)
     );
 }   

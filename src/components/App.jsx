@@ -15,7 +15,7 @@ export default function App() {
                 <Route path="/" element=<Home /> />
                 <Route path="/movies" element=<MovieList /> />
                 <Route path="/movies/:movieId" element=<MovieInfo /> />
-                <Route path="/contact-us" element=<Contact /> />
+                <Route path="/contact" element=<Contact /> />
                 <Route path="/*" element=<NotFoundPage /> />
             </Routes>
         </>
