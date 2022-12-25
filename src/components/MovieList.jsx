@@ -17,7 +17,7 @@ export default function Main() {
     }
 
     useEffect(() => {
-        let url = `http://localhost:3001/movies?_page=${pageNum}`;
+        let url = `http://localhost:3001/movies?_page=${pageNum}_limit=54`;
         axios.get(url)
             .then((response) => {
                 setMovies(response.data);
