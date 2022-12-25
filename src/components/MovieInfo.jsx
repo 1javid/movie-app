@@ -8,7 +8,7 @@ export default function MovieItem() {
     const { movieId } = useParams();
 
     useEffect(() => {
-        let url = `http://localhost:3000/movies/${movieId}`;
+        let url = `http://localhost:3001/movies/${movieId}`;
         axios.get(url)
             .then((response) => {
                 setMovie(response.data);

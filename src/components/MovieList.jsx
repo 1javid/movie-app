@@ -17,7 +17,7 @@ export default function Main() {
     }
 
     useEffect(() => {
-        let url = `http://localhost:3001/movies?_page=${pageNum}_limit=54`;
+        let url = `http://localhost:3001/movies?_page=${pageNum}&_limit=54`;
         axios.get(url)
             .then((response) => {
                 setMovies(response.data);
@@ -32,19 +32,19 @@ export default function Main() {
         movies ? (
             <>
                 <Movie movies={movies} />
-                <nav aria-label="Page navigation example">
+                <nav>
                     <ul class="pagination">
                         <li class="page-item">
-                            <a class="page-link" href="#" aria-label="Previous" onClick={previousClick}>
+                            <button class="page-link" aria-label="Previous" onClick={previousClick}>
                                 <span aria-hidden="true">&laquo;</span>
                                 <span class="sr-only">Previous</span>
-                            </a>
+                            </button>
                         </li>
                         <li>
-                            <a class="page-link" href="#" aria-label="Next" onClick={nextClick}>
+                            <button class="page-link" aria-label="Next" onClick={nextClick}>
                                 <span aria-hidden="true">&raquo;</span>
                                 <span class="sr-only">Next</span>
-                            </a>
+                            </button>
                         </li>
                     </ul>
                 </nav>
