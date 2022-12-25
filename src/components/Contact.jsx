@@ -1,8 +1,6 @@
 import React, { useRef } from 'react';
 import useForm from "./UseForm";
 
-const FORM_ENDPOINT = "http://localhost:3000/messages";
-
 export default function Contact() {
     const formElement = useRef(null);
     const additionalData = {
@@ -33,15 +31,15 @@ export default function Contact() {
     }
 
     return (
-        <div class="contact">
-            <form action={FORM_ENDPOINT} onSubmit={handleSubmit} method="POST" ref={formElement}>
-                <label for="email">From: </label>
+        <div className="contact">
+            <form action="http://localhost:3002/messages" onSubmit={handleSubmit} method="POST" ref={formElement}>
+                <label hmtlfor="email">From: </label>
                 <input type="email" name="email" id="email" />
 
-                <label for="subject">Subject: </label>
+                <label hmtlfor="subject">Subject: </label>
                 <input type="text" name="subject" id="subject" />
 
-                <label for="message">Message: </label>
+                <label hmtlfor="message">Message: </label>
                 <textarea name="text" id="message" cols="30" rows="10" placeholder="Type Here..."></textarea>
                 <input type="submit" value="SUBMIT" />
             </form>
