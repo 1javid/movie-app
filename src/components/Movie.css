@@ -49,3 +49,32 @@ div.pagination {
   align-items: center;
   padding-top: 10px;
 }
+
+.page-item {
+  width: 50%;
+  margin: 0;
+}
+
+.page-status {
+  padding: 0 5px 0 5px;
+  margin: 0 10px 0 10px;
+  border-radius: 8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: #2074d4;
+}
+
+.page-link {
+  border-radius: 8%;
+}
+
+.product-item {
+  text-decoration: none;
+}
+
+.product-item:hover {
+  text-decoration: underline;
+  color: #195daa;
+}
