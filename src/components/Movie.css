@@ -1,10 +1,42 @@
+* {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
 div.movie-info {
-    border: 1px solid black;
-    border-radius: 10px;
-    box-sizing: border-box;
-    display: inline-block;
-    margin: 5px;
-    padding: 0;
-    background-color: #fbf0e4;
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  box-sizing: border-box;
+  width: 40%;
+  margin: auto;
+  margin-top: 8px;
+  padding: 0;
+}
+
+div.movie-info-head {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+div.movie-info-head > img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+div.movie-info-body {
+  width: 90%;
+  margin: auto;
+}
+
+div.movie {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+div.movie-list {
+  width: 50%;
+  margin: auto;
+  margin-top: 15px;
+}
+
+.poster {
+  height: 70px;
 }
