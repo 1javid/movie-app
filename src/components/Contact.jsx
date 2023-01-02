@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import useForm from "./UseForm";
+import './Contact.css'
 
 export default function Contact() {
     const formElement = useRef(null);
