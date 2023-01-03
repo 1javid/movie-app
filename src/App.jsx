@@ -1,11 +1,11 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import Home from "./Home";
-import MovieList from "./MovieList";
-import MovieInfo from "./MovieInfo";
-import Contact from "./Contact";
-import NotFoundPage from "./NotFoundPage";
-import Navbar from "./Navbar";
+import Home from "./components/Home";
+import MovieList from "./components/MovieList";
+import MovieInfo from "./components/MovieInfo";
+import Contact from "./components/Contact";
+import NotFoundPage from "./components/NotFoundPage";
+import Navbar from "./components/Navbar";
 
 export default function App() {
     return (
