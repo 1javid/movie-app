@@ -26,7 +26,7 @@ export default function Main() {
             .catch((error) => {
                 console.log(error);
             })
-    }, [previousClick, nextClick]);
+    }, [pageNum]);
 
     return (
         movies ? (
