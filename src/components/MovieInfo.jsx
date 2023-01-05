@@ -52,7 +52,7 @@ export default function MovieItem() {
                     </Typography>
                 </CardContent>
                 <CardActions>
-                    <form action="http://localhost:3000/movies">
+                    <form action="http://localhost:3000/movie-app/movies">
                         <Button size="small" type="submit">Back</Button>
                     </form>
                 </CardActions>
