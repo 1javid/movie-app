@@ -1,45 +1,48 @@
 .home {
-    font-family: sans-serif;
-    text-align: center;
-  }
-  
-  .title {
-    color: #2074d4;
-  }
-  
-  .team-members {
-    margin-top: 50px;
-    padding: 0 15rem;
-    display: grid;
-    gap: 45px;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-  
-  .card {
-    background-color: white;
-    border: 1px solid #ccc;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
-    overflow: hidden;
-  }
-  
-  .card .img{
-    width: 100%;
-    height: 300px;
-    background-position: center;
-    background-size: cover;
-  }
-  
-  .name {
-    color: #2074d4;
-    margin: 10px;
-  }
-  
-  .faculty {
-    margin: 10px;
-  }
-  
-  .about {
-    margin: 10px;
-  }
-  
+  font-family: sans-serif;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.title {
+  color: #195daa;
+}
+
+.intro {
+  font-size: 35px;
+}
+
+.team-members,
+.projects {
+  padding: 0 15rem;
+  display: grid;
+  gap: 45px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.card {
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  overflow: hidden;
+}
+
+.card .img {
+  width: 100%;
+  height: 300px;
+  background-position: center;
+  background-size: cover;
+}
+
+.name {
+  color: #2074d4;
+  margin: 10px;
+}
+
+.faculty,
+.about,
+.link {
+  margin: 10px;
+  margin: 10px;
+}

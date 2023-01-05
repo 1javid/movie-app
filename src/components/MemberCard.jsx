@@ -1,7 +1,6 @@
 import React from "react";
 
-
-const MemberCard = ({member}) => {
+const MemberCard = ({ member }) => {
   return (
     <div className="card">
       <div style={{

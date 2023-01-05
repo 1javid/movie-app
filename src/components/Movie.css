@@ -2,6 +2,12 @@
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
+.title {
+  text-align: center;
+  margin: 50px 50px;
+  color: #195daa;
+}
+
 div.movie-info {
   box-sizing: border-box;
   width: 40%;
@@ -16,7 +22,7 @@ div.movie-info-head {
   align-items: center;
 }
 
-div.movie-info-head > img {
+div.movie-info-head>img {
   height: 50px;
   margin-right: 10px;
 }
