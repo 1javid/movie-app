@@ -12,12 +12,12 @@ export default function App() {
         <>
             <Navbar />
             <Routes>
-                <Route path="/home" element=<Home /> />
-                <Route path="/movies" element=<MovieList /> />
-                <Route path="/movies?page=:pageNum" element=<MovieList /> />
-                <Route path="/movies/:movieId" element=<MovieInfo /> />
-                <Route path="/contact" element=<Contact /> />
-                <Route path="/*" element=<NotFoundPage /> />
+                <Route path="/movie-app/" element=<Home /> />
+                <Route path="/movie-app/movies" element=<MovieList /> />
+                <Route path="/movie-app/movies?page=:pageNum" element=<MovieList /> />
+                <Route path="/movie-app/movies/:movieId" element=<MovieInfo /> />
+                <Route path="/movie-app/contact" element=<Contact /> />
+                <Route path="/movie-app/*" element=<NotFoundPage /> />
             </Routes>
         </>
     );
