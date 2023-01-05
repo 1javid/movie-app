@@ -35,7 +35,7 @@ export default function Movie(props) {
                                 <img class="poster" src={movie.Poster_Link} alt="movie_img" />
                             </Typography>
                             <Typography sx={{ color: 'text.secondary' }}>
-                                <NavLink className="product-item" to={"/movies/" + movie.id}>
+                                <NavLink className="product-item" to={"/movie-app/movies/" + movie.id}>
                                     <h4 className="movie-info-title">{movie.Series_Title}</h4>
                                 </NavLink>
                             </Typography>
