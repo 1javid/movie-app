@@ -1,4 +1,4 @@
-<h1 align="center"><a href="https://1javid.github.io/movies">Movie App</a></h1>
+<h1 align="center"><a href="https://1javid.github.io/movie-app/">Movie App</a></h1>
 
 ![movie-app](https://user-images.githubusercontent.com/87364506/210806151-302fd096-6cbf-4e59-83b8-482b62fb7879.png)
 
