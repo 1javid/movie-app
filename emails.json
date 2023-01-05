@@ -1,3 +1,16 @@
 {
-    "messages": []
+  "messages": [
+    {
+      "email": "jav.alakbarli@gmail.com",
+      "subject": "Test",
+      "text": "Test movies",
+      "id": 1
+    },
+    {
+      "email": "jav.alakbarli@gmail.com",
+      "subject": "Test",
+      "text": "Test movies",
+      "id": 2
+    }
+  ]
 }

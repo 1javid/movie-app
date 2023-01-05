@@ -68,8 +68,9 @@ export default function Home() {
   return (
     <div className="home">
       <h1 className="title">Introduction</h1>
-      <p className="intro"><i>As a Code of Duty team, we have develeped a React app that provides information and statistics
-        about top 1000 IMDB movies, as well as actors, directors, and other.</i></p>
+      <p className="intro"><i>As a Code of Duty team, we have developed a React app
+        that provides information and statistics about the top 1000 IMDB movies, as well
+        as actors, directors, and others.</i></p>
       <h1 className="title">Team Members</h1>
       <div className="team-members">
         {teamMembers.map(member => <MemberCard key={member.id} member={member} />)}
