@@ -12,7 +12,7 @@ export default function App() {
         <>
             <Navbar />
             <Routes>
-                <Route path="/" element=<Home /> />
+                <Route path="/home" element=<Home /> />
                 <Route path="/movies" element=<MovieList /> />
                 <Route path="/movies?page=:pageNum" element=<MovieList /> />
                 <Route path="/movies/:movieId" element=<MovieInfo /> />

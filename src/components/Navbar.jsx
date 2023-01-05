@@ -17,7 +17,7 @@ import Diversity3Icon from '@mui/icons-material/Diversity3';
 export default function Navbar() {
 
     const pages = ['Home', 'Movies', 'Contact'];
-    const links = ['/', '/movies', 'contact'];
+    const links = ['/home', '/movies', '/contact'];
 
     const [anchorElNav, setAnchorElNav] = React.useState(null);
 
@@ -38,7 +38,7 @@ export default function Navbar() {
                         variant="h6"
                         noWrap
                         component="a"
-                        href="/"
+                        href="/home"
                         sx={{
                             mr: 2,
                             display: { xs: 'none', md: 'flex' },
@@ -96,7 +96,7 @@ export default function Navbar() {
                         variant="h5"
                         noWrap
                         component="a"
-                        href="/"
+                        href="/home"
                         sx={{
                             mr: 2,
                             display: { xs: 'flex', md: 'none' },
