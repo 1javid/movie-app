@@ -1,5 +1,3 @@
-Sure! Here's an example of what your README.md file could look like:
-
 # Movies React App
 
 This is a simple React app that displays a list of movies and their details using data from JSON files.
