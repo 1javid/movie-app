@@ -1,37 +1,41 @@
-<h1 align="center"><a href="https://1javid.github.io/movie-app/">Movie App</a></h1>
+Sure! Here's an example of what your README.md file could look like:
 
-![movie-app](https://user-images.githubusercontent.com/87364506/210806151-302fd096-6cbf-4e59-83b8-482b62fb7879.png)
+# Movies React App
 
-## Build with
-<ul>
- <li><a href="https://reactjs.org">React</a></li>
- <li><a href="https://www.npmjs.com/package/json-server?activeTab=readme">JSON-Server</a></li>
-</ul>
+This is a simple React app that displays a list of movies and their details using data from JSON files.
 
-## Development
-<p>To get a local copy of the code, clone it using git:</p>
+## Features
 
-```
- https://github.com/1javid/movie-app.git
- cd movie-app
-```
-<p>Install dependencies:<p>
+- View a list of movies
+- Click on a movie to see its details
+- Search for a movie by title
+- Filter movies by genre
 
-```
- npm install
-```
-<p>Start a local web server by running:</p>
+## Getting Started
 
-```
- npm start
-```
-<p>Start a JSON server by running:</p>
+1. Clone the repository: `git clone https://github.com/1javid/movie-app.git`
+2. Install dependencies: `npm install`
+3. Run the app: `npm start`
+4. Run JSON servers: `json-server -p 3001 movies.json` and `json-server -p 3002 emails.json`
+4. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-```
- json-server -p 3001 movies.json
- json-server -p 3002 emails.json
-```
-<p>And then open <a href="http://localhost:3000">http://localhost:3000</a> to view it in the browser.</p>
+## Usage
 
-## Credits
-<p>Movie App is built and maintained by <a href="https://github.com/1javid">Javid Alakbarli</a>, <a href="https://github.com/Jamal023">Jamaladdin Talishinskiy</a>, and <a href="https://github.com/BayramovAnar">Anar Bayramov</a></p>
+### Viewing Movies
+
+The app will display a list of movies by default. Click on a movie to view its details.
+
+## JSON Data
+
+The app uses two JSON files to store data:
+
+- `movies.json`: contains a list of all movies with their titles, descriptions, genres, and images.
+- `emails.json`: contains a list of all emails that have been sent through contact page.
+
+## Contribution
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+## License
+
+This project is licensed under the [MIT License](https://choosealicense.com/licenses/mit/).
