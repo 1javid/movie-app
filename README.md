@@ -6,8 +6,7 @@ This is a simple React app that displays a list of movies and their details usin
 
 - View a list of movies
 - Click on a movie to see its details
-- Search for a movie by title
-- Filter movies by genre
+- Contact us by sending email
 
 ## Getting Started
 
